@@ -14,7 +14,7 @@ function Unit(components, properties) {
 }
 
 Object.defineProperties(Unit, {
-	"position:" {
+	"position": {
 		get: function() {
 			return this._entity.getPosition();
 		},
@@ -22,7 +22,7 @@ Object.defineProperties(Unit, {
 			this._entity.setPosition(value);
 		}
 	},
-	"x" : {
+	"x": {
 		get: function() {
 			return this._entity.getPosition().x;
 		},
@@ -32,7 +32,7 @@ Object.defineProperties(Unit, {
 			this._entity.setPosition(position);
 		}
 	},
-	"y" : {
+	"y": {
 		get: function() {
 			return this._entity.getPosition().y;
 		},
@@ -42,7 +42,7 @@ Object.defineProperties(Unit, {
 			this._entity.setPosition(position);
 		}
 	},
-	"z" : {
+	"z": {
 		get: function() {
 			return this._entity.getPosition().z;
 		},
