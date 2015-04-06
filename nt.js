@@ -17,7 +17,7 @@ pc.script.create('nt', function (context) {
 		
 		initialize: function() {
 			
-			nt.socket = new Socket();
+			nt.socket = new nt.Socket();
 			
 		}
 		
