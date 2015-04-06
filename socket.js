@@ -94,7 +94,7 @@ function onError() {
 
 //Declared above, so we just set it
 loadSocket = function () {
-	socket = new WebSocket("wss://notextures.io:8082");
+	socket = new WebSocket(nt.SERVER_ADDRESS);
 	socket.onmessage = onMessage;
 	socket.onopen = onOpen;
 	socket.onclose = onClose;
@@ -103,7 +103,7 @@ loadSocket = function () {
 
 loadSocket();
 
-nt.socket = {
+nt.Socket = {
 
 /**********************************************************
 *   Getters/setters
